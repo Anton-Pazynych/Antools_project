@@ -10,6 +10,8 @@ $breakpoints375: 374.98+px;
 $orange: #FF6E30;
 $bg_color: #1E252B;
 $withe: #Ffffff;
+$title_color: rgba(255, 255, 255, 0.9);;
+$subtitle_color: rgba(255, 255, 255, 0.55);
 
 
 //Mixin
@@ -37,20 +39,26 @@ body {
   max-width: 1264px;
   margin: 0 auto;
   padding: 0 20px;
+  @media(max-width:$breakpoints768){
+    padding: 0 10px;
+  }
   
 }
 
 .title {
   font-size: 4.8rem;
   line-height: 7rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  color: $title_color;
+  
 }
 
 
 .sub-title {
   font-size: 1.8rem;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+  color: $subtitle_color;
 }
 
 .btn {
@@ -68,4 +76,28 @@ body {
   }
 }
 
+
+.icon_title{
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: $title_color;
+}
+
+.icon_sub-title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: rgba(255, 165, 55, 0.55);
+}
+
+
+.icon_text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: $subtitle_color;
+}
 
