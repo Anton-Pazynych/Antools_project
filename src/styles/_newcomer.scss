@@ -1,0 +1,32 @@
+.newcomer {
+
+  &__top {
+    background: rgba(44, 53, 61, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    padding: 55px 0;
+
+    &_title {
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      color: rgba(255, 255, 255, 0.8);
+      padding: 0 0 55px 0;
+      text-align: center;
+    }
+
+    &_icons-body {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &_icon {
+    }
+  }
+
+  &__botton {
+    padding: 200px 0;
+    display: flex;
+  }
+
+}
