@@ -81,23 +81,35 @@ body {
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 3.6rem;
-  color: $title_color;
+  transition: all ease 1s;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.popular__icon:hover .icon_title{
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .icon_sub-title{
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.8rem;
   line-height: 2.7rem;
+  transition: all ease 1s;
   color: rgba(255, 165, 55, 0.55);
+}
+
+.popular__icon:hover .icon_sub-title{
+  color: #FFA537;
 }
 
 
 .icon_text{
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.6rem;
   line-height: 3rem;
-  color: $subtitle_color;
+  transition: all ease 1s;
+  color: rgba(255, 255, 255, 0.55);
 }
+
+.popular__icon:hover .icon_text{
+  color: rgba(255, 255, 255, 0.78);
+}
+
 

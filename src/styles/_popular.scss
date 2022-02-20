@@ -1,0 +1,132 @@
+.popular {
+
+  &__body {
+    padding: 200px 0;
+  }
+
+  &__title {
+    text-align: center;
+    
+  }
+
+  &__sub-title {
+    text-align: center;
+    padding: 25px 0 90px;
+  }
+
+  &__icons-body {
+    display: flex;
+    padding: 0 0 100px 0;
+  }
+
+  &__icon {
+    position: relative;
+    top: 0;
+    width: 392px;
+    height: 294px;
+    transition: all ease 1s;
+    border-radius: 15px;
+    border: 2px solid #28303600;
+    &:hover{
+      top: -20px;
+      border: 2px solid #28303699;
+      background: rgba(40, 48, 54, 0.6);
+      backdrop-filter: blur(50px);
+    }
+  }
+
+  &__button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 17px 38px ;
+    border-radius: .8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color:#FF6E30;
+    transition: all ease 1s;
+    cursor: pointer;
+    &:hover{
+      color: $title_color;
+      @include btn-hover;
+    }
+    
+  }
+}
+
+
+
+.icon {
+
+  &__body {
+    margin: 33px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      top: 0;
+      left: 0;
+
+      background-image: url('../img/popular_icon_figma.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title {
+    padding: 0 0 0 93px;
+  }
+
+  &__sub-title {
+    padding: 3px 0 30px 93px;
+  }
+
+  &__text {
+    padding: 0 0 40px 0;
+  }
+
+  &__botton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__svg-body {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__svg {
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease 1s;
+    &:hover {
+      background: #283036;
+      box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+    }
+    & svg {
+      fill: red;
+    }
+  }
+
+  &__button {
+    padding: 0.9rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgba(255, 255, 255, 0.55);
+    transition: all ease 1s;
+    border-radius: 8px;   
+  }
+}
+
+.popular__icon:hover .icon__button{
+  background: #FF6E30;
+  color: #FFFFFF;
+  &:hover{
+    @include btn-hover;
+  }
+}
+
