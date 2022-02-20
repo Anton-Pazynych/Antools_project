@@ -1,20 +1,48 @@
+//------Breakpoints
+$breakpoints1400: 1339.98+px;
+$breakpoints992: 991.98+px;
+$breakpoints768: 768.98+px;
+$breakpoints488: 479.98+px;
+$breakpoints375: 374.98+px;
 
-body {
-  font-size: 10px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
+
+//Colors
+$orange: #FF6E30;
+$bg_color: #1E252B;
+$withe: #Ffffff;
+
+
+//Mixin
+@mixin btn-hover {
+  background-color: #f37c49;
+  box-shadow: 0 0 10px #f37c49;
+  
 }
 
+html {
+  font-size: 10px;
+  @media(max-width:$breakpoints768){
+    font-size: 8px;
+  }
+}
+
+
+body {
+  font-family: 'Poppins';
+  background-color: #1E252B;
+}
+
+
 .container {
-  max-width: 1224px;
+  max-width: 1264px;
   margin: 0 auto;
-  pa
+  padding: 0 20px;
+  
 }
 
 .title {
-  font-size: 48px;
-  line-height: 130%;
+  font-size: 4.8rem;
+  line-height: 7rem;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -25,7 +53,19 @@ body {
   color: rgba(255, 255, 255, 0.55);
 }
 
-.logo {
-
+.btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #FDF5FF;
+  padding: 1.2rem 2.8rem;
+  border-radius: 8px;
+  background-color: $orange;
+  transition: all .5s ease;
+  &:hover{
+    @include btn-hover;
+  }
 }
+
 
