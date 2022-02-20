@@ -2,6 +2,7 @@
 
   &__body {
     padding: 200px 0;
+    
   }
 
   &__title {
@@ -11,12 +12,16 @@
 
   &__sub-title {
     text-align: center;
-    padding: 25px 0 90px;
+    padding: 25px 0 90px 0;
   }
 
   &__icons-body {
     display: flex;
+    flex-wrap: wrap;
     padding: 0 0 100px 0;
+    row-gap: 100px;
+    justify-content: center;
+    column-gap: 24px;
   }
 
   &__icon {
@@ -55,7 +60,6 @@
 }
 
 
-
 .icon {
 
   &__body {
@@ -68,14 +72,13 @@
       height: 64px;
       top: 0;
       left: 0;
-
-      background-image: url('../img/popular_icon_figma.svg');
       background-repeat: no-repeat;
     }
   }
 
   &__title {
     padding: 0 0 0 93px;
+    position: relative;
   }
 
   &__sub-title {
@@ -106,8 +109,27 @@
       background: #283036;
       box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
     }
-    & svg {
-      fill: red;
+    &:first-child{
+      &:hover{
+        & svg {
+          &  path{
+          fill: #FD3B41;
+          fill-opacity: 1;
+          transition: all 1s ease;
+          }
+        }
+      }
+    }
+    &:last-child{
+      &:hover{
+        & svg {
+          &  path{
+          fill: #d3e200;
+          fill-opacity: 1;
+          transition: all 1s ease;
+          }
+        }
+      }
     }
   }
 
@@ -119,6 +141,7 @@
     color: rgba(255, 255, 255, 0.55);
     transition: all ease 1s;
     border-radius: 8px;   
+    
   }
 }
 
@@ -130,3 +153,40 @@
   }
 }
 
+
+.icon__figma {
+  &::before{
+    content: '';
+    background-image: url('../img/popular_icon_figma.svg');
+  }
+}
+.icon__sketch {
+  &::before{
+    content: '';
+    background-image: url('../img/popular_icon_sketch.svg');
+  }
+}
+.icon__vsc {
+  &::before{
+    content: '';
+    background-image: url('../img/popular_icon_vsc.svg');
+  }
+}
+.icon__notion {
+  &::before{
+    content: '';
+    background-image: url('../img/popular_icon_notion.svg');
+  }
+}
+.icon__slack {
+  &::before{
+    content: '';
+    background-image: url('../img/popular_icon_slack.svg');
+  }
+}
+.icon__invision {
+  &::before{
+    content: '';
+    background-image: url('../img/popular_icon_invision.svg');
+  }
+}
