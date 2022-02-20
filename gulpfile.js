@@ -4,7 +4,7 @@ const dest = require('dest')
 const sass = require('gulp-sass')(require('sass'))
 const browsersync = require('browser-sync').create()
 const fileinclude = require('gulp-file-include')
-const imagemin = require('gulp-imagemin')
+// const imagemin = require('gulp-imagemin')
 
 
 const paths = {
